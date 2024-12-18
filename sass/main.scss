@@ -5,6 +5,7 @@
 $primary: #648141;
 $secondary: #FFF5EC;
 
+
 $display-font-sizes: (
     1: 5rem,
     2: 4.5rem,
@@ -14,6 +15,10 @@ $display-font-sizes: (
     6: 2.5rem,  
     7: 12.5rem
 );
+
+#root {
+    font-family: "League Spartan", serif;
+}
 
 h1, h2 {
     font-family: "Sansita", serif;
@@ -27,7 +32,7 @@ h2 {
     letter-spacing: -5%;
 }
 
-h3, h4, p {
+h3, h4, h5, p {
     font-family: "League Spartan", serif;
 
 }
@@ -40,6 +45,22 @@ h3 {
     padding-top: 7rem !important;
     padding-bottom: 7rem !important;
   }
+
+.button {
+    font-family: "League Spartan", serif;
+}
+
+
+
+// a{
+//     color: #000000;
+//     text-decoration: none;
+//     padding:16px;
+//     display: block;
+//     &:hover{
+//         color: rgb(77, 77, 77);
+//     }
+// }
 
 // Functions / Variables / Mix-Ins
 // This needs to be below the styles because variables overwrites your changes.
