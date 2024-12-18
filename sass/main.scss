@@ -1,0 +1,34 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+
+$primary: rgb(18, 95, 131);
+
+// $enable-rounded: false;
+
+// Functions / Variables / Mix-Ins
+// This needs to be below the styles because variables overwrites your changes.
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$custom-colors: (
+    "tertiary": rgb(0, 131, 192),
+    "tertiary-light": rgb(91, 183, 226),
+    "tertiary-dark": rgb(0, 95, 139),
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@each $color, $value in $colors {
+    .bg-#{$color}{
+        background-color: $value
+    }
+    .bg-#{color}-light{
+        background-color: tint-color($value, 60%)
+    }
+    .bg-#{color}-dark{
+        background-color: shade-color($value, 20%)
+    }
+};
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// This need to be at the very bottom of the file
