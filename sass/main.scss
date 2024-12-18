@@ -15,24 +15,31 @@ $display-font-sizes: (
     7: 12.5rem
 );
 
-h1 {
+h1, h2 {
     font-family: "Sansita", serif;
+}
+
+h1 {
     letter-spacing: -10%;
 }
 
 h2 {
-    font-family: "Sansita", serif;
+    letter-spacing: -5%;
+}
+
+h3, h4, p {
+    font-family: "League Spartan", serif;
+
 }
 
 h3 {
-    font-family: "League Spartan", serif;
-    letter-spacing: 30%;
+    letter-spacing: 20%;
 }
 
-h4 {
-    font-family: "League Spartan", serif;
-}
-
+.py-6 {
+    padding-top: 7rem !important;
+    padding-bottom: 7rem !important;
+  }
 
 // Functions / Variables / Mix-Ins
 // This needs to be below the styles because variables overwrites your changes.
@@ -59,6 +66,20 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
         background-color: shade-color($value, 20%)
     }
 };
+
+// $utilities: map-merge(
+//   $utilities,
+//   (
+//     "background-image": (
+//       property: background-image,
+//       class: bg-img,
+//       values: (
+//         savourwhite: url('../images/webassets/background.png')
+//       )
+//     )
+//   )
+// );
+
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 // This need to be at the very bottom of the file
