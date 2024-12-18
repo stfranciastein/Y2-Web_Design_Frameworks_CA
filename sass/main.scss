@@ -1,9 +1,38 @@
 @import "../node_modules/bootstrap/scss/functions";
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
 
 
-$primary: rgb(18, 95, 131);
+$primary: #648141;
+$secondary: #FFF5EC;
 
-// $enable-rounded: false;
+$display-font-sizes: (
+    1: 5rem,
+    2: 4.5rem,
+    3: 4rem,
+    4: 3.5rem,
+    5: 3rem,
+    6: 2.5rem,  
+    7: 12.5rem
+);
+
+h1 {
+    font-family: "Sansita", serif;
+    letter-spacing: -10%;
+}
+
+h2 {
+    font-family: "Sansita", serif;
+}
+
+h3 {
+    font-family: "League Spartan", serif;
+    letter-spacing: 30%;
+}
+
+h4 {
+    font-family: "League Spartan", serif;
+}
+
 
 // Functions / Variables / Mix-Ins
 // This needs to be below the styles because variables overwrites your changes.
@@ -11,9 +40,10 @@ $primary: rgb(18, 95, 131);
 @import "../node_modules/bootstrap/scss/mixins";
 
 $custom-colors: (
-    "tertiary": rgb(0, 131, 192),
-    "tertiary-light": rgb(91, 183, 226),
-    "tertiary-dark": rgb(0, 95, 139),
+    "tertiary": #949E7B,
+    "quaternary": #EA8800,
+    "quinary": #83603D,
+    "senary": #42552A,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
