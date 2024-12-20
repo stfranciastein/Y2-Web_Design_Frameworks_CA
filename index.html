@@ -13,44 +13,70 @@
   </head>
   <body class="bg-secondary">
     <!--Navbar-->
-    <!--If I keep navbar in header the way I coded it, it will only stay 'sticky' on the header section-->
     <!-- I also segmented these into sections just cause I think it looks nicer in code.-->
     <!-- Hi Stefan -->
     <div class="border-bottom border-1 sticky-top py-3">
       <nav class="navbar navbar-expand-lg container-xl">
-          <div class="container-xl">
+        <div class="container-xl">
+
+            <!--Burger Menu-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Food Waste</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Businesses</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Storing Food</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Recipes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-disabled="true">Prices</a>
-                </li>
-              </ul>
+              
+              <div class="row col-12 d-flex justify-content-center">
+
+                <!--Left Navbar Items-->
+                <div class="col-md">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Food Waste</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!--Center Logo-->
+                <div class="col-md-2 flex justify-content-center align-items-center">
+                  <img src="images/webassets/logo.png" class="img-fluid">
+                </div>
+
+                <!--Right Navbar Items-->
+                <div class="col-md text-center">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Businesses</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Storing Food</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Recipes</a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+              
             </div>
-          </div>
-        </nav>
+
+        </div> <!--Ends Container-->
+      </nav>
     </div>
     <!--Header-->
     <header>
-        <div class="container-fluid bg-img text-light py-5 mb-5" style="background-image: url('../images/webassets/background.png'); background-repeat: repeat; background-size: cover">
-            <div class="container-xl">
+        <div  class="container-fluid bg-img text-light py-5 mb-5 position-relative" 
+              style=" background-image: url('../images/webassets/background.png'); 
+                      background-repeat: repeat; 
+                      background-size: cover">
+              <div  class="gradient-overlay position-absolute top-0 start-0 w-100 h-100" 
+                    style="background: linear-gradient(to bottom, #00000000 0%, #FFF5EC 100%); z-index: 1; pointer-events: none;">
+              </div>
+            <div class="container-xl position-relative" style="z-index: 2;">
             <div class="row align-items-center">
                 <div class="text-center py-6">
                     <h1 class="display-huge fw-bolder text-uppercase fst-italic text-primary">SAVOUR</h1>
@@ -111,10 +137,11 @@
                 <div class="row text-center justify-content-center mb-5">
                   <div class="col-8 pb-4">
                       <p class="text-uppercase fw-bold fs-4 text-primary pb-2">Save yourself the labour and download savour</p>
+                      <img src="images/webassets/mockup.png" class="img-fluid h-75 pb-4">
                       <p class="text-primary fs-5">With a growing community of over 660k users on both the Google Play and the App Store, Savour is one of the go-to app for managing your food waste at home.</p>
                       <div class="flex h-auto">
-                        <img src="images/webassets/down2.png" class="img-fluid h-25">
-                        <img src="images/webassets/down1.png" class="img-fluid h-25">
+                        <img src="images/webassets/down2.png" class="img-fluid">
+                        <img src="images/webassets/down1.png" class="img-fluid">
                       </div>
                   </div>
                 </div>
@@ -133,7 +160,7 @@
                 <p>803,011</p>
                 <p>Listings</p>
               </div>
-              <div class="col-md-3 col-12 p-sm-3 p-5"> <!-- If you decide to leave this going to columns keep the padding here big on small screens-->
+              <div class="col-md-3 col-12 p-md-0 p-sm-3 p-5"> <!-- If you decide to leave this going to columns keep the padding here big on small screens-->
                 <p>663,451</p>
                 <p>Downloads</p>
               </div>
@@ -146,7 +173,7 @@
 			</div>
     </section>
 
-    <!--White Section-->
+    <!--Recipe Section-->
     <section>
       <div class="container-fluid">
         <div class="container-xl py-6">
@@ -191,6 +218,9 @@
               <img src="images/2.png" alt="" class="img-fluid">
             </div>
           </div>
+
+
+
 
           <div class="row align-items-center border-bottom border-1">
             <div class="col-md-6">
