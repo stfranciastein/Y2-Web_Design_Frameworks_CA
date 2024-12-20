@@ -1,9 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
-#root {
-  font-family: "League Spartan", serif;
-}
-
 h1, .h1, h2, .h2 {
   font-family: "Sansita", serif;
 }
@@ -29,8 +25,9 @@ h3, .h3 {
   padding-bottom: 7rem !important;
 }
 
-.button {
-  font-family: "League Spartan", serif;
+.small-image {
+  width: 300px;
+  height: 300px;
 }
 
 .bg-blue {
@@ -872,12 +869,34 @@ progress {
 }
 
 .display-7 {
-  font-size: calc(2.375rem + 13.5vw);
+  font-size: calc(1.325rem + 0.9vw);
   font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-7 {
+    font-size: 2rem;
+  }
+}
+
+.display-8 {
+  font-size: calc(1.275rem + 0.3vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-8 {
+    font-size: 1.5rem;
+  }
+}
+
+.display-huge {
+  font-size: calc(2.375rem + 13.5vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-huge {
     font-size: 12.5rem;
   }
 }

@@ -13,12 +13,14 @@ $display-font-sizes: (
     4: 3.5rem,
     5: 3rem,
     6: 2.5rem,  
-    7: 12.5rem
+    7: 2rem,
+    8: 1.5rem,
+    huge: 12.5rem //You don't have to use numbers. Also, display-font has breakpoints within Bootstrap 5.3 so use those.
 );
 
-#root {
-    font-family: "League Spartan", serif;
-}
+// #root {
+//     font-family: "League Spartan", serif;
+// }
 
 h1, h2 {
     font-family: "Sansita", serif;
@@ -46,11 +48,6 @@ h3 {
     padding-bottom: 7rem !important;
   }
 
-.button {
-    font-family: "League Spartan", serif;
-}
-
-
 
 // a{
 //     color: #000000;
@@ -74,6 +71,15 @@ $custom-colors: (
     "senary": #42552A,
 );
 
+@mixin image-size($size){
+    width: $size;
+    height: $size;
+}
+
+.small-image {
+    @include image-size(300px);
+}
+
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @each $color, $value in $colors {
@@ -87,20 +93,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
         background-color: shade-color($value, 20%)
     }
 };
-
-// $utilities: map-merge(
-//   $utilities,
-//   (
-//     "background-image": (
-//       property: background-image,
-//       class: bg-img,
-//       values: (
-//         savourwhite: url('../images/webassets/background.png')
-//       )
-//     )
-//   )
-// );
-
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 // This need to be at the very bottom of the file
