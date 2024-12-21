@@ -96,7 +96,7 @@ $headings-letter-spacing: (
 
 ////////////////// Custom Classes //////////////////////////////////////////////////////
 .small-image {
-  @include image-size(300px, 300px);
+  @include image-size(400px, 300px);
 }
 
 // Apply Mixins to Elements
