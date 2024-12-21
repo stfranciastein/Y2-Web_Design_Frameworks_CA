@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Waste</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  </head>
+  <body class="bg-secondary">
+    <!-- Navbar -->
+    <div class="position-fixed top-0 w-100 py-0" style="z-index: 3;">
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-xl">
+          <!-- Left Section -->
+          <a class="navbar-brand d-sm-none" href="index.html">
+            <img id="navbar-logo" src="images/webassets/logo.png" alt="Logo" class="d-inline-block align-text-top">
+          </a>
+      
+          <!-- Toggler for Responsive Menu -->
+          <button class="navbar-toggler text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Collapsible Content -->
+          <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+            <!-- Left Navigation -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+              <li class="nav-item">
+                <a id="nvb-link-1" class="nav-link text-primary fs-5" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="nvb-link-2" class="nav-link text-primary fs-5" href="foodwaste.html">Food Waste</a>
+              </li>
+            </ul>
+      
+            <!-- Logo (Hidden starting from sm) -->
+            <a class="navbar-brand mx-auto d-none d-sm-block" href="#">
+              <img id="navbar-logo2" src="images/webassets/logo.png" alt="Logo" class="d-inline-block align-text-top">
+            </a>
+                    
+      
+            <!-- Right Navigation -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a id="nvb-link-3" class="nav-link text-primary fs-5" href="business.html">Business</a>
+              </li>
+              <li class="nav-item">
+                <a id="nvb-link-4" class="nav-link text-primary fs-5" href="recipes.html">Recipes</a>
+              </li>
+              <li class="nav-item">
+                <a id="nvb-link-5" class="nav-link text-primary fs-5" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--REUSABLE HEADER NOT FOR HOME PAGE -->
+    <header>
+      <div class="container-fluid bg-img text-light pt-7 mb-5 position-relative" 
+          style="background-image: url('../images/webassets/background.png'); 
+                  background-repeat: repeat; 
+                  background-size: cover;">
+                  
+        <div class="gradient-overlay position-absolute top-0 start-0 w-100 h-100" 
+            style="background: linear-gradient(to bottom, #00000000 0%, #FFF5EC 100%); z-index: 1; pointer-events: none;">
+        </div>
+        <!--Actual Content-->
+        <div class="container-xl position-relative" style="z-index: 2;">
+          <div class="row text-center justify-content-center mb-5">
+            <div class="col-lg-9 col-md-10 col-sm-12 col-12">
+                <p class="text-uppercase fw-bold fs-4 text-primary mb-1">What you need to know about</p>
+                <h1 class="display-1 text-uppercase fw-bolder fst-italic text-quaternary">Food Waste</h1>
+                <img src="images/waste.webp" class="img-fluid rounded-4 py-3">
+            </div>
+          </div>
+        </div>
+
+      </div> <!--Ends Container-->
+    </header>
+
+    <!-- Intro to Food Waste -->
+    <section>
+      <div class="container-fluid bg-secondary">
+
+        <div class="container-xl py-sm-6 py-3">
+          <div class="row align-items-center">
+            <div class="col-md-6 pb-sm-0 pb-5"> <!-- Justifies text to right -->
+              <!-- <p class="text-uppercase fw-bold fs-4 text-primary mb-1">Calling All Proprietors</p> -->
+              <h2 class="display-3 text-uppercase fw-bolder fst-italic text-quaternary">WHERE  WE  ARE GLOBALLY</h2>
+              <p class="pt-3 text-primary fs-5">In the 19 years between 2000 and 2019, global domestic material consumption (DMC) - the amount of raw materials directly used for production processes ina  country has gone up by 66%, tripling since the 1970s which translates to 95.1 billion metric tons of material.</p>
+              <!-- <button type="button" class="btn btn-primary button-lg text-secondary">
+                <i class="bi bi-arrow-bar-right"></i>
+                Make an Inquiry 
+              </button> -->
+            </div>
+            <div class="col-md-6">
+              <img src="images/4.png" alt="" class="img-fluid rounded-4">
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="container-xl pb-6">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <img src="images/3.png" alt="" class="img-fluid rounded-4 pb-sm-0 pb-5">
+            </div>
+            <div class="col-md-6 text-sm-end"> <!-- Justifies text to right -->
+              <!-- <p class="text-uppercase fw-bold fs-4 text-primary mb-1">Calling All Proprietors</p> -->
+              <h2 class="display-3 text-uppercase fw-bolder fst-italic text-quaternary">GLOBAL WASTE INEQUALITY</h2>
+              <p class="pt-3 text-primary fs-5">High-Income countries are responsible for a disproportionate amount of global greenhouse gas (GHG) emissions. The average personal carbon footprint in Nigeria is 1.6 tonnes, whereas in the US it is 21.1 tonnes.</p>
+              <!-- <button type="button" class="btn btn-primary button-lg text-secondary">
+                <i class="bi bi-arrow-bar-right"></i>
+                Make an Inquiry 
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Stats Section-->
+    <section>
+      <div class="container-fluid bg-tertiary text-light my-5 py-5" id="#testimonial">
+				<div class="container-lg">
+					<div class="row justify-content-center text-center text-uppercase display-7 fw-bold">
+              <div class="col-md-3 col-12 col-4 pb-1">
+                <p>803,011</p>
+                <p>Listings</p>
+              </div>
+              <div class="col-md-3 col-12 p-md-0 p-sm-3 p-5"> <!-- If you decide to leave this going to columns keep the padding here big on small screens-->
+                <p>663,451</p>
+                <p>Downloads</p>
+              </div>
+              <div class="col-md-3 col-12 pb-1">
+                <p>154,237</p>
+                <p>Recipes</p>
+              </div>
+					</div>
+				</div>
+			</div>
+    </section>
+
+    <!-- Food Waste Continued -->
+    <section>
+      <div class="container-fluid bg-secondary">
+
+        <div class="container-xl py-6">
+          <div class="row align-items-center">
+            <div class="col-md-6 pb-sm-0 pb-5"> <!-- Justifies text to right -->
+              <!-- <p class="text-uppercase fw-bold fs-4 text-primary mb-1">Calling All Proprietors</p> -->
+              <h2 class="display-3 text-uppercase fw-bolder fst-italic text-quaternary">Taking Responisibility</h2>
+              <p class="pt-3 text-primary fs-5">In essence, high-income countries have an important responsibility to adopt more sustainable policies for the betterment of the globe. It is also important to continue raise awareness in order to ensure efficient usage and management of the Earth’s limited - and often highly unequally historically and presently exploited - natural resources.</p>
+              <!-- <button type="button" class="btn btn-primary button-lg text-secondary">
+                <i class="bi bi-arrow-bar-right"></i>
+                Make an Inquiry 
+              </button> -->
+            </div>
+            <div class="col-md-6 text-end">
+              <img src="images/5.webp" alt="" class="img-fluid rounded-4">
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="container-xl pb-6">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <img src="images/8.jpg" alt="" class="img-fluid rounded-4 pb-sm-0 pb-5">
+            </div>
+            <div class="col-md-6 text-sm-end"> <!-- Justifies text to right -->
+              <!-- <p class="text-uppercase fw-bold fs-4 text-primary mb-1">Calling All Proprietors</p> -->
+              <h2 class="display-3 text-uppercase fw-bolder fst-italic text-quaternary">Carbon Footprint?</h2>
+              <p class="pt-3 text-primary fs-5">It is important to note that people’s perception of their personal carbon footprints - and what exactly a ‘carbon footprint’ entails - is quite unclear.  One of the ways carbon footprints are measured is through numeracy. Numeracy is defined as creating context for behavior by assigning values to actions ‘is my environmental impact low or high?’. This can lead to effective behavioral change as it creates concrete goals for people to aim for.</p>
+              <button type="button" class="btn btn-primary button-lg text-secondary">
+                <i class="bi bi-arrow-bar-right"></i>
+                Find Out More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Expiry Section-->
+    <!--This includes both the coloured and white section-->
+    <section>
+      <!-- Dark Section -->
+      <div class="container-fluid bg-primary">
+        <div class="container-xl py-6">
+
+          <div class="row align-items-center">
+            <div class="col-md-6 pb-md-0 pb-sm-3 pb-4">
+              <!-- <p class="text-uppercase fw-bold fs-4 text-secondary mb-1">Toss or keep</p> -->
+              <h2 class="display-3 text-uppercase fw-bolder fst-italic text-secondary">Food expiry and you</h2>
+              <p class="pt-3 text-secondary fs-5">People's understanding of food expiry dates and what they signify is often unclear, leading to confusion about food safety and waste. Food expiry labels like "use by," "best before," and "sell by" serve different purposes, but misconceptions can result in perfectly edible food being discarded. Addressing these misconceptions can help reduce food waste and promote sustainable habits.</p>
+              <button type="button" class="btn btn-secondary button-lg text-primary">
+                <i class="bi bi-arrow-bar-right"></i>
+                Discover More
+              </button>
+            </div>
+            <div class="col-md-6">
+              <img src="images/7.jpg" alt="" class="img-fluid rounded-4">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- White Section -->
+      <div class="container-fluid bg-secondary">
+        <div class="container-xl py-6">
+
+          <div class="row align-items-center">
+            <div class="col-md-12 text-center"> <!-- Justifies text to right -->
+              <p class="text-uppercase fw-bold fs-4 text-primary mb-1">HOW DO EXPIRY DATES WORK?</p>
+              <h2 class="display-3 text-uppercase fw-bolder fst-italic text-quaternary">DETERMINING THE DATES</h2>
+              <p class="pt-3 text-primary fs-5">Best before and use by dates are determined by a number of different factors. Click on each box to learn more about the science behind food expiration and the difference between best before/use by dates.</p>
+              
+              <!--FAQ ACCORDION -->
+              <div class="accordion" id="accordionExample">
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-primary text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      What is shelf life?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-start">
+                      <p class="lh-5"> Shelf-life is the period of time during which a food maintains its acceptable or desirable characteristics under specified storage and handling conditions. These acceptable or desirable characteristics can be related to the safety or quality of the product and can be microbiological, chemical or physical in nature. Under European legislation (Regulation (EU) No. 1169/2011) shelf-life is referred to as the “date of minimum durability”.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-primary text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      What’s the difference between ‘best before’ and ‘use by’ dates?
+                    </button>
+                  </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body text-start">
+                        <p class="lh-5">
+                          The date of minimum durability, or ‘best before’ date, is the date until which a foodstuff retains its specific properties, e.g., taste, aroma, appearance, any specific qualities which relate to the product, vitamin content, etc., when the product has been stored appropriately and the package unopened. 
+                          Typically, a ‘best before’ date is used for food products such as canned, dried, ambient, frozen foods, etc. Many foods that are past their ‘best before’ date may be safe to eat, but their quality may have deteriorated.
+                          In the case of foods, which from a microbiological point of view, are highly perishable and are therefore likely after a short period to constitute an immediate danger to human health, the date of minimum durability must be replaced by the ‘use by’ date. The ‘use by’ is the date up until which a food may be used safely, i.e. consumed, cooked or processed, once it has been stored correctly. After the ‘use by’ date, a food is deemed unsafe in accordance with article 14(2) of Regulation EC No. 178/2002 and cannot be sold.
+                          Typically, a ‘use by’ date is used for fresh, ready-to-eat and chilled foods such as yogurt, milk, meat, unpasteurised fruit juices, etc. 
+                          An exception to this is raw, shell eggs which require a ‘best before’ date as set out in Regulation (EC) No. 589/2008 as regards marketing standards for eggs.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-primary text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Who decides if a product requires a ‘best before’ or a ‘use by’ date?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-start">
+                      <p class="lh-5">
+                        The food business operator (usually the manufacturer or producer) attaching a label to a food product is responsible for deciding whether a ‘best before’ or ‘use by’ date is required for declaration of its shelf-life.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-primary text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Do all foods reqire a shelf-life declaration?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-start">
+                      <p class="lh-5">
+                        No, a shelf-life declaration, i.e., a ‘best before’ or ‘use by’ date, is not required for the following foods:
+                      </p>
+                      <ul>
+                        <li>Fresh fruit and vegetables, including potatoes, which have not been peeled, cut or similarly treated. However, this does not apply to sprouting seeds and similar products such as legume sprouts which do require a date of minimum durability.</li>
+                        <li>Wines, liqueur wines, sparkling wines, aromatised wines, and similar products obtained from fruit other than grapes, and beverages falling within CN code 2206 00 obtained from grapes or grape musts.</li>
+                        <li>Beverages containing 10 % or more by volume of alcohol</li>
+                        <li>Bakers’ or pastry cooks’ wares which, given the nature of their content, are normally consumed within 24 hours of their manufacture</li>
+                        <li>Vinegar</li>
+                        <li>Cooking Salt</li>
+                        <li>Solid Sugar</li>
+                        <li>Confectionery products consisting almost solely of flavoured and/or coloured sugars</li>
+                        <li>Chewing gums and similar chewing products.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-primary text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      When is it safe for me to consume food that has gone past its due date?
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-start">
+                      <p class="lh-5">
+                        The safety of consuming food past its best before or use by date depends on the type of food and the label.
+                      </p>
+                      <li>
+                        <li><strong>Best Before Date:</strong> Foods with this label are about quality, not safety. They may lose freshness, texture, or flavor after the date but are often still safe to eat if stored properly. Always inspect the food for signs of spoilage, such as mold or an unusual smell.</li>
+                        <li><strong>Use By Date:</strong></li> Foods with this label are about safety, particularly for perishable items like dairy, meat, or ready-to-eat meals. Consuming these after the date could pose health risks, even if the food looks or smells fine. Always follow the storage instructions to maximize shelf life.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div> <!--Ends Accordion Container -->
+            </div>       
+          </div> <!--Ends Row Container -->
+         
+          <div class="py-6 text-center">
+            <h4 class="text-uppercase text-primary pb-3 fw-bold">Read More</h4>
+            <div class="d-md-flex gap-3">
+              <div class="border border-primary rounded-2 p-3 text-start mb-sm-0 mb-3">
+                <img src="images/articles/1.jpg" class="img-fluid py-3 small-image">
+                <p class="h6 text-uppercase fs-7 fw-medium text-quaternary">Food Waste</p>
+                <p class="h5 text-uppercase fw-bold text-primary">Common Food Waste Misconceptions</p>
+                <p> His body is the Gelsons, her soul the fallen star. At midnight, twice a week she comes, she leaves and no one has hassled her so far.</p>
+                <p class="fs-7 text-quinary">By: Joshua Santiago-Francia</p>
+              </div>
+              <div class="border border-primary rounded-2 p-3 text-start mb-sm-0 mb-3">
+                <img src="images/articles/2.jpg" class="img-fluid py-3 small-image">
+                <p class="h6 text-uppercase fs-7 fw-medium text-quaternary">Storage</p>
+                <p class="h5 text-uppercase fw-bold text-primary">10 Best ways to manage your food at home</p>
+                <p> His body is the Gelsons, her soul the fallen star. At midnight, twice a week she comes, she leaves and no one has hassled her so far.</p>
+                <p class="fs-7 text-quinary">By: Jeremi Olzac</p>
+              </div>
+              <div class="border border-primary rounded-2 p-3 text-start mb-sm-0 mb-3">
+                <img src="images/articles/3.jpg" class="img-fluid py-3 small-image">
+                <p class="h6 text-uppercase fs-7 fw-medium text-quaternary">Environment</p>
+                <p class="h5 text-uppercase fw-bold text-primary">Carbon Numeracy And You</p>
+                <p> His body is the Gelsons, her soul the fallen star. At midnight, twice a week she comes, she leaves and no one has hassled her so far.</p>
+                <p class="fs-7 text-quinary">By: Andrew Gallagher</p>
+              </div>
+              <div class="border border-primary rounded-2 p-3 text-start mb-sm-0 mb-3">
+                <img src="images/articles/4.jpeg" class="img-fluid py-3 small-image">
+                <p class="h6 text-uppercase fs-7 fw-medium text-quaternary">Food Waste</p>
+                <p class="h5 text-uppercase fw-bold text-primary">Gelon Bodies and Fallen Star Souls</p>
+                <p>Mahashmashana, all is silent now. And in the next universal dawn, we won't have to do the corpse dance, do the corpse dance with these arms.</p>
+                <p class="fs-7 text-quinary">By: Father John Misty</p>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary button-lg text-secondary mt-4">
+              <i class="bi bi-arrow-bar-right"></i>
+              View all stories
+            </button>
+          </div>
+        </div> <!--Ends Box Container -->        
+      </div> <!-- Ends Fluid Container-->
+    </section>   
+    
+    <footer> <!-- REUSEABLE -->
+      <div class="container-fluid bg-primary">
+        <div class="container-xl pt-3">
+          <div class="row pb-2 align-items-center">
+
+            <!--Left Footer Items-->
+            <div class="col-md-8 col-sm-8 col-12 text-secondary text-uppercase pb-3">
+              <p class="h1 fw-bolder fst-italic display-3">Savour</p>
+              <p class="fw-bold">The Food Saving App</p>
+              <ul class="d-lg-flex justify-content-start gap-3 list-unstyled fw-medium">
+                <li class="pb-sm-0 pb-3">Career</li>
+                <li class="pb-sm-0 pb-3">Press</li>
+                <li class="pb-sm-0 pb-3">Support</li>
+                <li class="pb-sm-0 pb-3">My Business</li>
+              </ul> 
+              <ul class="d-flex justify-content-start gap-3 list-unstyled fs-4">
+                <li><i class="bi bi-facebook"></i></li>
+                <li><i class="bi bi-twitter"></i></li>
+                <li><i class="bi bi-instagram"></i></li>
+                <li><i class="bi bi-tiktok"></i></li>
+                <li><i class="bi bi-youtube"></i></li>
+                <li><i class="bi bi-linkedin"></i></li>
+              </ul>
+              <div class="d-flex justify-content-start gap-1 pb-sm-0">
+                <img src="images/webassets/down2.png" class="img-fluid rounded-2 pb-sm-0 pb-1">
+                <img src="images/webassets/down1.png" class="img-fluid rounded-2 pb-sm-0 pb-1">
+              </div>
+            </div>
+
+            <!-- Right Footer Items -->
+            <div class="col-md-4 col-sm-8 col-12 text-secondary text-md-end">
+              <p class="fw-medium fs-6">Sign up for the mailing list to get the latest updates</p>
+              <form class="d-flex justify-content-md-end" role="search">
+                <input class="form-control input-limited" type="search" placeholder="Enter email" aria-label="Go">
+                <button class="btn btn-quaternary btn-outline-secondary border-0 ms-2" type="submit">Go</button>
+              </form>
+              <p class="pt-3 fs-7">By subscribing you are agreeing to the Privacy Policy and Terms of Use.</p>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <!--Bottom Footer Items-->
+      <div class="container-fluid bg-senary">
+        <div class="container-xl pt-3">
+          <div class="row">
+            <div class="col-12 text-md-center text-secondary fs-7">
+              <ul class="d-md-flex justify-content-between list-unstyled">
+                <li class="pb-sm-0 pb-3">Legal</li>
+                <li class="pb-sm-0 pb-3">Privacy Policy</li>
+                <li class="pb-sm-0 pb-3">Cookie Policy</li>
+                <li class="pb-sm-0 pb-3">Terms and Conditions</li>
+                <li class="pb-sm-0 pb-3">User Agreement</li>
+                <li class="pb-sm-0 pb-3">UN Food Waste SDG</li>
+                <li class="pb-sm-0 pb-3">Design Process</li>
+              </ul>
+              <p>© 2024 Savour. All rights reserved. Savour and all of its subsidiaries is a product of my imagination. For details, contact Mr. Sandman.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>
