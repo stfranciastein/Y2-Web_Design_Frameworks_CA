@@ -5,6 +5,11 @@
   height: 300px;
 }
 
+.indicator {
+  width: 20px;
+  height: 4px;
+}
+
 h1, .h1, h2, .h2, h3, .h3 {
   font-family: "Sansita", serif;
 }
@@ -14,7 +19,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  letter-spacing: -5% !important;
+  letter-spacing: 0% !important;
 }
 
 h3, .h3 {

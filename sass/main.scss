@@ -64,7 +64,7 @@ $text-font-family: "League Spartan", serif;
 
 $headings-letter-spacing: (
   h1: -10%, 
-  h2: -5%, 
+  h2: 0%, 
   h3: 20%
 );
 
@@ -97,6 +97,10 @@ $headings-letter-spacing: (
 ////////////////// Custom Classes //////////////////////////////////////////////////////
 .small-image {
   @include image-size(400px, 300px);
+}
+
+.indicator {
+  @include image-size(20px, 4px);
 }
 
 // Apply Mixins to Elements
