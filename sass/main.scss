@@ -17,6 +17,7 @@ $display-font-sizes: (
   6: 2.5rem,
   7: 2rem,
   8: 1.5rem,
+  9: 1.25rem,
   huge: 12.5rem
 );
 
@@ -91,7 +92,7 @@ h1, h2, h3 {
   @include heading-letter-spacing();    // Applies letter-spacing directly
   
 
-h3, h4, h5, p, a {
+h3, h4, h5, p, a, li {
   @include text-styles();
 }
 

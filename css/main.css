@@ -21,7 +21,7 @@ h3, .h3 {
   letter-spacing: 20% !important;
 }
 
-h3, .h3, h4, .h4, h5, .h5, p, a {
+h3, .h3, h4, .h4, h5, .h5, p, a, li {
   font-family: "League Spartan", serif;
 }
 
@@ -859,6 +859,12 @@ progress {
   .display-8 {
     font-size: 1.5rem;
   }
+}
+
+.display-9 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.2;
 }
 
 .display-huge {
