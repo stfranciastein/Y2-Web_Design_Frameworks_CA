@@ -56,7 +56,7 @@ $headings-letter-spacing: (
   h3: 20%
 );
 
-// Mixins
+/// Mixins ////////////////////////////////////////////////////////////////////////////////
 @mixin heading-styles {
     font-family: $heading-font-family;
   }
@@ -109,6 +109,35 @@ h3, h4, h5, p, a, li {
   }
 }
 
+
+/// This is my 1 custom css class that is for the ever-scrolling carousel ////////////////
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.carousel-track {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scroll 20s linear infinite; /* Infinite smooth scrolling */
+}
+
+.carousel-track img {
+  margin-right: 20px; /* Spacing between logos */
+}
+
+/* Scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at the beginning */
+  }
+  100% {
+    transform: translateX(-100%); /* Move left to the duplicated logos */
+  }
+}
+
 // Import Bootstrap Variables, Mixins, and Bootstrap Core
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
