@@ -103,6 +103,14 @@ $headings-letter-spacing: (
   @include image-size(20px, 4px);
 }
 
+.article-image {
+  @include image-size (100px, 100px);
+}
+
+.big-article {
+  @include image-size (600px, 400px);
+}
+
 // Apply Mixins to Elements
 h1, h2, h3 {
     @include heading-styles();         // Applies font-family

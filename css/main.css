@@ -10,6 +10,16 @@
   height: 4px;
 }
 
+.article-image {
+  width: 100px;
+  height: 100px;
+}
+
+.big-article {
+  width: 600px;
+  height: 400px;
+}
+
 h1, .h1, h2, .h2, h3, .h3 {
   font-family: "Sansita", serif;
 }

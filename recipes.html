@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  </head>
+  <body class="bg-secondary">
+    <!-- Navbar -->
+    <div class="position-fixed top-0 w-100 py-0" style="z-index: 3;">
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-xl">
+          <!-- Left Section -->
+          <a class="navbar-brand d-sm-none" href="index.html">
+            <img id="navbar-logo" src="images/webassets/logo.png" alt="Logo" class="d-inline-block align-text-top">
+          </a>
+      
+          <!-- Toggler for Responsive Menu -->
+          <button class="navbar-toggler text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Collapsible Content -->
+          <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+            <!-- Left Navigation -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+              <li class="nav-item">
+                <a id="nvb-link-1" class="nav-link text-primary fs-5" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="nvb-link-2" class="nav-link text-primary fs-5" href="foodwaste.html">Food Waste</a>
+              </li>
+            </ul>
+      
+            <!-- Logo (Hidden starting from sm) -->
+            <a class="navbar-brand mx-auto d-none d-sm-block" href="#">
+              <img id="navbar-logo2" src="images/webassets/logo.png" alt="Logo" class="d-inline-block align-text-top">
+            </a>
+                    
+      
+            <!-- Right Navigation -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a id="nvb-link-3" class="nav-link text-primary fs-5" href="business.html">Business</a>
+              </li>
+              <li class="nav-item">
+                <a id="nvb-link-4" class="nav-link text-primary fs-5" href="recipes.html">Recipes</a>
+              </li>
+              <li class="nav-item">
+                <a id="nvb-link-5" class="nav-link text-primary fs-5" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--REUSABLE HEADER NOT FOR HOME PAGE -->
+    <header>
+      <div class="container-fluid bg-img text-light pt-7 mb-5 position-relative" 
+          style="background-image: url('../images/webassets/background.png'); 
+                  background-repeat: repeat; 
+                  background-size: cover;">
+                  
+        <div class="gradient-overlay position-absolute top-0 start-0 w-100 h-100" 
+            style="background: linear-gradient(to bottom, #00000000 0%, #FFF5EC 100%); z-index: 1; pointer-events: none;">
+        </div>
+        <!--Actual Content-->
+        <div class="container-xl position-relative" style="z-index: 2;">
+          <div class="row text-center justify-content-center mb-5">
+            <div class="col-lg-9 col-md-10 col-sm-12 col-12">
+                <p class="text-uppercase fw-bold fs-4 text-primary mb-1">Flavours to Savour</p>
+                <h1 class="h2 display-1 text-uppercase fw-bolder fst-italic text-quaternary">Community Recipes</h1>
+            </div>
+          </div>
+        </div>
+      </div> <!--Ends Container-->
+    </header>
+
+    <!-- Main Recipe Section -->
+    <section>
+      <div class="container-fluid bg-secondary">
+        <div class="container-xl py-sm-6 py-3">
+
+          <!-- The recipe header cards from Index -->
+          <div class="row text-center justify-content-center mb-6">
+            <div class="col-md-3 col-sm-4 col-6 pb-lg-0 pb-2">
+              <img src="images/webassets/card1.png" class="img-fluid">
+            </div>
+
+            <div class="col-md-3 col-sm-4 col-6 pb-lg-0 pb-2">
+              <img src="images/webassets/card2.png" class="img-fluid">
+            </div>
+
+            <div class="col-md-3 col-sm-4 col-6 pb-lg-0 pb-2">
+              <img src="images/webassets/card3.png" class="img-fluid">
+            </div>
+
+            <div class="col-md-3 col-sm-4 col-6 pb-lg-0 pb-2">
+              <img src="images/webassets/card4.png" class="img-fluid">
+            </div>
+          </div>
+
+
+          <!-- Actual Recipe Articles -->
+          <div class="row justify-content-center">
+
+            <!-- Middle-sized Recipe Cards -->
+            <div class="col-md-3 col-12">
+              <div class="row align-items-center pb-1 mb-3 border-bottom border-quinary">
+                <img src="images/recipe/1.jpg" class="col-5 article-image object-fit-cover">
+                <div class="col-7">
+                  <p class="fs-8 mb-0 fw-bold text-quaternary text-uppercase">Lunch</p>
+                  <p class="h5 fs-5 fw-bold text-primary mb-1">Portobello French Dip</p>
+                  <p class="fs-7 mb-1 text-quinary">By: Eduards Oss</p>
+                  <p class="fs-7 mb-1 text-quinary">Published: 21/12/24</p>
+                  <p class="fs-7 m-0 text-success"><i class="bi bi-star-fill"> 5 (502)</i></p>
+                  <p></p>
+                </div>
+              </div>
+              <div class="row align-items-center pb-2 mb-3 border-bottom border-quinary">
+                <img src="images/recipe/2.jpg" class="col-5 article-image object-fit-cover">
+                <div class="col-7">
+                  <p class="fs-8 mb-0 fw-bold text-quaternary text-uppercase">Breakfast</p>
+                  <p class="h5 fs-5 fw-bold text-primary mb-1">Roasted Veggie Grain Bowl</p>
+                  <p class="fs-7 mb-1 text-quinary">By: Jing Gao</p>
+                  <p class="fs-7 mb-1 text-quinary">Published: 09/12/24</p>
+                  <p class="fs-7 m-0 text-success"><i class="bi bi-star-fill"> 4 (1502)</i></p>
+                  <p></p>
+                </div>
+              </div>
+              <div class="row align-items-center pb-2 mb-3 border-bottom border-quinary">
+                <img src="images/recipe/3.jpg" class="col-5 article-image object-fit-cover">
+                <div class="col-7">
+                  <p class="fs-8 mb-0 fw-bold text-quaternary text-uppercase">Snack</p>
+                  <p class="h5 fs-5 fw-bold text-primary mb-1">Puppy Chow</p>
+                  <p class="fs-7 mb-1 text-quinary">By: Jeremi Olzac</p>
+                  <p class="fs-7 mb-1 text-quinary">Published: 05/12/24</p>
+                  <p class="fs-7 m-0 text-success"><i class="bi bi-star-fill"> 4.3 (392)</i></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Giant Middle Recipe Card -->
+            <div class="col-md-6 col-12 text-sm-center mb-sm-0 mb-5">
+              <img src="images/recipe/4.jpg" class="big-article object-fit-cover img-fluid">
+              <p class="fs-6 mt-3 mb-0 fw-bold text-quaternary text-uppercase">Snack</p>
+              <p class="h4 fs-3 text-uppercase mt-2 fw-bold text-primary">Salmon with Basil Sauce and Tomato Salad</p>
+              <p class="fs-6 text-quinary mb-2">By: Lindsay Magnusdottir</p>
+              <p class="fs-6 text-quinary mb-3">Published: 21/12/24</p>
+              <p class="fs-6 m-0 text-success"><i class="bi bi-star-fill"> 5 (2609)</i></p>
+            </div>
+
+            <!-- The Smaller Recipe Cards -->
+            <div class="col-md-3 col-12">
+              <p class="text-primary text-uppercase fs-7 fw-bold">More Featured Recipes</p>
+
+              <div class="mt-1 mb-4 pb-2 border-bottom border-quinary">
+                <p class="fw-bold text-primary fs-6 mb-1 pb-1">Simple Green Salad</p>
+                <p class="text-quinary fs-7 mb-1">By: Jeremi Olzac</p>
+                <p class="fs-7 m-0 text-success"><i class="bi bi-star-fill"> 4.3 (392)</i></p>
+              </div>
+              <div class="mt-1 mb-4 pb-2 border-bottom border-quinary">
+                <p class="fw-bold text-primary fs-6 mb-1 pb-1">Burger King Foot Lettuce</p>
+                <p class="text-quinary fs-7 mb-1">By: Thomas McCarthy</p>
+                <p class="fs-7 m-0 text-success"><i class="bi bi-star-fill"> 3.3 (92)</i></p>
+              </div>
+              <div class="mt-1 mb-4 pb-2 border-bottom border-quinary">
+                <p class="fw-bold text-primary fs-6 mb-1 pb-1">Dragonfire Ribs</p>
+                <p class="text-quinary fs-7 mb-1">By: Kieron Tekumu</p>
+                <p class="fs-7 m-0 text-success"><i class="bi bi-star-fill"> 3.1 (22)</i></p>
+              </div>
+              <div class="mt-1 mb-4 pb-2 border-bottom border-quinary">
+                <p class="fw-bold text-primary fs-6 mb-1 pb-1">Spicy Chicken Wings</p>
+                <p class="text-quinary fs-7 mb-1">By: Christine Montecheu</p>
+                <p class="fs-7 m-0 text-success"><i class="bi bi-star-fill"> 4 (69)</i></p>
+              </div>
+              <div class="mt-1 mb-4 pb-2 border-bottom border-quinary">
+                <p class="fw-bold text-primary fs-6 mb-1 pb-1">Mashash Potatoes</p>
+                <p class="text-quinary fs-7 mb-1">By: Joshua Tillman</p>
+                <p class="fs-7 m-0 text-success"><i class="bi bi-star-fill"> 5 (211124)</i></p>
+              </div>
+              
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--Stats Section-->
+    <section>
+      <div class="container-fluid bg-tertiary text-light my-2 py-5" id="#testimonial">
+				<div class="container-lg">
+					<div class="row justify-content-center text-center text-uppercase display-7 fw-bold">
+              <div class="col-md-3 col-12 col-4 pb-1">
+                <p>803,011</p>
+                <p>Listings</p>
+              </div>
+              <div class="col-md-3 col-12 p-md-0 p-sm-3 p-5"> <!-- If you decide to leave this going to columns keep the padding here big on small screens-->
+                <p>663,451</p>
+                <p>Downloads</p>
+              </div>
+              <div class="col-md-3 col-12 pb-1">
+                <p>154,237</p>
+                <p>Recipes</p>
+              </div>
+					</div>
+				</div>
+			</div>
+    </section>
+
+    <!-- Food Waste Continued -->
+    <section>
+      <div class="container-fluid bg-secondary">
+
+        <div class="container-xl mt-6">
+
+          <div class="row text-center justify-content-center">
+            <div class="col-8">
+                <p class="text-uppercase fw-bold fs-4 text-primary pb-2">Find More Recipes on the Savour App</p>
+                <img src="images/webassets/mockup.png" class="img-fluid w-md-25 mb-4">
+                <p class="text-primary fs-5">Can't find the right recipe here? The Savour app has over 150+ more recipes waiting for you to discover. You can even share your own with the world so you can spread the fun!</p>
+                <div class="flex h-auto">
+                  <img src="images/webassets/down2.png" class="img-fluid rounded-2 pb-sm-0 pb-1">
+                  <img src="images/webassets/down1.png" class="img-fluid rounded-2">
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Read More -->
+    <section>
+      <div class="container-fluid bg-secondary">
+        <div class="container-xl mb-1">
+          <div class="py-6 text-center">
+            <h4 class="text-uppercase text-primary pb-3 fw-bold">Read More</h4>
+            <div class="d-md-flex gap-3">
+              <div class="border border-primary rounded-2 p-3 text-start mb-sm-0 mb-3">
+                <img src="images/articles/1.jpg" class="img-fluid py-3 small-image">
+                <p class="h6 text-uppercase fs-7 fw-bold text-quaternary">Food Waste</p>
+                <p class="h5 text-uppercase fw-bold text-primary">Common Food Waste Misconceptions</p>
+                <p> His body is the Gelsons, her soul the fallen star. At midnight, twice a week she comes, she leaves and no one has hassled her so far.</p>
+                <p class="fs-7 text-quinary">By: Joshua Santiago-Francia</p>
+              </div>
+              <div class="border border-primary rounded-2 p-3 text-start mb-sm-0 mb-3">
+                <img src="images/articles/2.jpg" class="img-fluid py-3 small-image">
+                <p class="h6 text-uppercase fs-7 fw-bold text-quaternary">Storage</p>
+                <p class="h5 text-uppercase fw-bold text-primary">10 Best ways to manage your food at home</p>
+                <p> His body is the Gelsons, her soul the fallen star. At midnight, twice a week she comes, she leaves and no one has hassled her so far.</p>
+                <p class="fs-7 text-quinary">By: Jeremi Olzac</p>
+              </div>
+              <div class="border border-primary rounded-2 p-3 text-start mb-sm-0 mb-3">
+                <img src="images/articles/3.jpg" class="img-fluid py-3 small-image">
+                <p class="h6 text-uppercase fs-7 fw-bold text-quaternary">Environment</p>
+                <p class="h5 text-uppercase fw-bold text-primary">Carbon Numeracy And You</p>
+                <p> His body is the Gelsons, her soul the fallen star. At midnight, twice a week she comes, she leaves and no one has hassled her so far.</p>
+                <p class="fs-7 text-quinary">By: Andrew Gallagher</p>
+              </div>
+              <div class="border border-primary rounded-2 p-3 text-start mb-sm-0 mb-3">
+                <img src="images/articles/4.jpeg" class="img-fluid py-3 small-image">
+                <p class="h6 text-uppercase fs-7 fw-bold text-quaternary">Food Waste</p>
+                <p class="h5 text-uppercase fw-bold text-primary">Gelon Bodies and Fallen Star Souls</p>
+                <p>Mahashmashana, all is silent now. And in the next universal dawn, we won't have to do the corpse dance, do the corpse dance with these arms.</p>
+                <p class="fs-7 text-quinary">By: Father John Misty</p>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary button-lg text-secondary text-uppercase fw-bold mt-4">
+              View all stories
+              <i class="bi bi-arrow-bar-right"></i>
+            </button>
+          </div>
+        </div> <!--Ends Box Container -->        
+      </div>
+    </section>   
+    
+    <footer> <!-- REUSEABLE -->
+      <div class="container-fluid bg-primary">
+        <div class="container-xl pt-3">
+          <div class="row pb-2 align-items-center">
+
+            <!--Left Footer Items-->
+            <div class="col-md-8 col-sm-8 col-12 text-secondary text-uppercase pb-3">
+              <p class="h1 fw-bolder fst-italic display-3">Savour</p>
+              <p class="fw-bold">The Food Saving App</p>
+              <ul class="d-lg-flex justify-content-start gap-3 list-unstyled fw-medium">
+                <li class="pb-sm-0 pb-3">Career</li>
+                <li class="pb-sm-0 pb-3">Press</li>
+                <li class="pb-sm-0 pb-3">Support</li>
+                <li class="pb-sm-0 pb-3">My Business</li>
+              </ul> 
+              <ul class="d-flex justify-content-start gap-3 list-unstyled fs-4">
+                <li><i class="bi bi-facebook"></i></li>
+                <li><i class="bi bi-twitter"></i></li>
+                <li><i class="bi bi-instagram"></i></li>
+                <li><i class="bi bi-tiktok"></i></li>
+                <li><i class="bi bi-youtube"></i></li>
+                <li><i class="bi bi-linkedin"></i></li>
+              </ul>
+              <div class="d-flex justify-content-start gap-1 pb-sm-0">
+                <img src="images/webassets/down2.png" class="img-fluid rounded-2 pb-sm-0 pb-1">
+                <img src="images/webassets/down1.png" class="img-fluid rounded-2 pb-sm-0 pb-1">
+              </div>
+            </div>
+
+            <!-- Right Footer Items -->
+            <div class="col-md-4 col-sm-8 col-12 text-secondary text-md-end">
+              <p class="fw-medium fs-6">Sign up for the mailing list to get the latest updates</p>
+              <form class="d-flex justify-content-md-end" role="search">
+                <input class="form-control input-limited" type="search" placeholder="Enter email" aria-label="Go">
+                <button class="btn btn-quaternary btn-outline-secondary border-0 ms-2" type="submit">Go</button>
+              </form>
+              <p class="pt-3 fs-7">By subscribing you are agreeing to the Privacy Policy and Terms of Use.</p>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <!--Bottom Footer Items-->
+      <div class="container-fluid bg-senary">
+        <div class="container-xl pt-3">
+          <div class="row">
+            <div class="col-12 text-md-center text-secondary fs-7">
+              <ul class="d-md-flex justify-content-between list-unstyled">
+                <li class="pb-sm-0 pb-3">Legal</li>
+                <li class="pb-sm-0 pb-3">Privacy Policy</li>
+                <li class="pb-sm-0 pb-3">Cookie Policy</li>
+                <li class="pb-sm-0 pb-3">Terms and Conditions</li>
+                <li class="pb-sm-0 pb-3">User Agreement</li>
+                <li class="pb-sm-0 pb-3">UN Food Waste SDG</li>
+                <li class="pb-sm-0 pb-3">Design Process</li>
+              </ul>
+              <p>© 2024 Savour. All rights reserved. Savour and all of its subsidiaries is a product of my imagination. For details, contact Mr. Sandman.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>
